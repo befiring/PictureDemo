@@ -44,7 +44,7 @@ public class ImageHelper {
      *
      * @param bmSrc
      * */
-    public static Bitmap bitmap2Gray(Bitmap bmSrc) {
+    public static Bitmap huidu(Bitmap bmSrc) {
         // 得到图片的长和宽
         int width = bmSrc.getWidth();
         int height = bmSrc.getHeight();
@@ -62,7 +62,7 @@ public class ImageHelper {
         return bmpGray;
     }
 
-    public static Bitmap bitmap2Gray2(Bitmap bmp){
+    public static Bitmap huidu2(Bitmap bmp){
         int width = bmp.getWidth();
         int height = bmp.getHeight();
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
@@ -102,7 +102,7 @@ public class ImageHelper {
      * G=0.349r+0.686g+0.168b
      * B=0.272r+0.534g+0.131b
      */
-    public static Bitmap oldImage(Bitmap bmp)
+    public static Bitmap huaijiu(Bitmap bmp)
     {
         int width = bmp.getWidth();
         int height = bmp.getHeight();
@@ -143,7 +143,7 @@ public class ImageHelper {
      * G=255-G;
      * B=255-B;
      */
-    public static Bitmap negativeFilm(Bitmap mBitmapSrc) {
+    public static Bitmap dipian(Bitmap mBitmapSrc) {
         // RGBA的最大值
         final int MAX_VALUE = 255;
         int width = mBitmapSrc.getWidth();
@@ -196,7 +196,7 @@ public class ImageHelper {
      * B.g = C.g - B.g + 127
      * B.b = C.b - B.b + 127
      */
-    public static Bitmap reliefImage(Bitmap mBitmapSrc) {
+    public static Bitmap fudiao(Bitmap mBitmapSrc) {
         int width = mBitmapSrc.getWidth();
         int height = mBitmapSrc.getHeight();
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);

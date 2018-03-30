@@ -2,7 +2,6 @@ package com.befiring.picturedemo;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -36,16 +35,16 @@ public class PixelActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.huidu:
-                imageView.setImageBitmap(ImageHelper.bitmap2Gray2(bitmap));
+                imageView.setImageBitmap(ImageHelper.huidu2(bitmap));
                 break;
             case R.id.huaijiu:
-                imageView.setImageBitmap(ImageHelper.oldImage(bitmap));
+                imageView.setImageBitmap(ImageHelper.huaijiu(bitmap));
                 break;
             case R.id.dipian:
-                imageView.setImageBitmap(ImageHelper.negativeFilm(bitmap));
+                imageView.setImageBitmap(ImageHelper.dipian(bitmap));
                 break;
             case R.id.bingdong:
-                imageView.setImageBitmap(ImageHelper.reliefImage(bitmap));
+                imageView.setImageBitmap(ImageHelper.fudiao(bitmap));
                 break;
             default:
                 break;
