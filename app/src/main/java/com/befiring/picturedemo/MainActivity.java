@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_matrix).setOnClickListener(this);
         findViewById(R.id.btn_api).setOnClickListener(this);
+        findViewById(R.id.btn_pixel).setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_api:
                 startActivity(new Intent(this,SecondActivity.class));
+                break;
+            case R.id.btn_pixel:
+                startActivity(new Intent(this,PixelActivity.class));
                 break;
         }
     }

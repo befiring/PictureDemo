@@ -17,5 +17,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Android API演示"/>
+    <Button
+        android:id="@+id/btn_pixel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="像素点处理"/>
 
 </LinearLayout>
